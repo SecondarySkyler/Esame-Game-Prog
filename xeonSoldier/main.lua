@@ -96,12 +96,5 @@ local function shootCollision (event)
     end
 end
 
-local function removeDeadBodies(event) 
-    if (isDead == true) then
-        event.object:removeSelf()
-        event.object = nil
-    end
-end
-
 Runtime:addEventListener("collision", shootCollision)
 xeon:addEventListener("tap", shoot)
