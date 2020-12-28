@@ -66,10 +66,9 @@ physics.addBody(zombie, "static", {filter = zombieCollision, outline = zombieOut
 
 --funzione per rimuovere i corpi morti
 local function removeDeadBodies() 
-    if (isDead == true) then
-        event.object:removeSelf()
-        event.object = nil
-    end
+        zombie:removeSelf()
+        zombie = nil
+        print("dead")
 end
 
 -- funzione che gestisce la collisione tra proiettile e nemico
@@ -91,7 +90,7 @@ local function shootCollision (event)
         if (life == 0) then
             zombie:play()
             isDead = true
-            timer.performWithDelay(3000, removeDeadBodies)
+            transition.fadeOut(event.object1, {time = 1000, onComplete = removeDeadBodies})
         end 
     end
 end
