@@ -131,9 +131,6 @@ local function jumpanim(event)
     cowboy:play()
     isOnTheFloor = false
     cowboy:applyLinearImpulse(0, -0.2)
-    if (cowboy.isTouching == true) then
-        cowboy:setSequence("Idle")
-    end
 end
 
 
