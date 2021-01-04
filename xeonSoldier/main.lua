@@ -62,6 +62,7 @@ life = 100
 local isDead = false
 local enemyLife = display.newText({text = "HP: "..life, x = zombie.x, y = zombie.y - 30, fontSize = "10"})
 local zombieCollision = {categoryBits = 2, maskBits = 1}
+--local zombieOutline = graphics.newOutline(1, zombieSheet, 1)
 physics.addBody(zombie, "static", {filter = zombieCollision, outline = zombieOutline})
 
 --funzione per rimuovere i corpi morti
