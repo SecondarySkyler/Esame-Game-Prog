@@ -10,6 +10,10 @@ function M.new()
     local walkData = {width = 65, height = 78, numFrames = 10, sheetContentWidth = 650, sheetContentHeight = 78}
     local walkSheet = graphics.newImageSheet("img/walkSheet.png", walkData)
 
+    -- death sheet
+    local deathData = {width = 63, height = 53, numFrames = 12, sheetContentWidth = 756, sheetContentHeight = 53}
+    local deathSheet = graphics.newImageSheet("img/zombieDeathSheet.png", deathData)
+
     -- sequences
     local zombieSeqs = {
         {
@@ -29,11 +33,22 @@ function M.new()
             time = 500,
             loopCount = 0,
             loopDirection = "forward"
+        },
+        {
+            name = "Death",
+            sheet = deathSheet,
+            start = 1,
+            count = 12,
+            time = 500,
+            loopCount = 1,
+            loopDirection = "forward"
         }
     } 
 
     local zombie = display.newSprite(idleSheet, zombieSeqs)
-    physics.addBody(zombie, "dynamic", {bounce = 0})
+    zombie.life = 100
+    local zombieCollision = {categoryBits = 2, maskBits = 1}
+    physics.addBody(zombie, "dynamic", {bounce = 0, filter = zombieCollision})
     zombie.isFixedRotation = true
 
     return zombie

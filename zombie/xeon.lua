@@ -31,8 +31,26 @@ function M.new()
     }
 
     local xeon = display.newSprite (xeonWalkSheet, xeonSequences)
-    physics.addBody(xeon, "dynamic", {bounce = 0})
+    local xeonFilterCollision = {categoryBits = 2, maskBits = 4}
+    physics.addBody(xeon, "dynamic", {bounce = 0, filter = xeonFilterCollision})
     xeon.isFixedRotation = true
+    xeon.name = "xeon"
+
+    --======================= COLLISIONI ====================================
+    local function onCollision(self, event)
+        local collidedObject = event.other
+
+        if (event.phase == "began") then
+            if (collidedObject.name == "minicovid") then
+                print("youre dead")
+            end
+        elseif(event.phase == "ended") then
+            display.remove(collidedObject)
+        end
+    end
+
+
+    xeon.collision = onCollision
 
     return xeon
 end
@@ -61,6 +79,29 @@ function M.create(xeon, xPos, yPos)
     xeon.y = yPos
     xeon:scale(2,2)
     xeon:setSequence("walk")
+    xeon:addEventListener("collision", xeon)
+end
+
+--definizione dello sprite per il proiettile
+local opt = {width = 16, height = 12, numFrames = 5}
+local laserSheet = graphics.newImageSheet("img/laser.png", opt)
+local laserSeqs = {
+    name = "laser",
+    start = 1,
+    count = 5,
+    time = 400,
+    loopCount = 0,
+    loopDirection = "forward"
+}
+
+
+function M.shoot(xeon, event)
+    local laser = display.newSprite(laserSheet, laserSeqs) 
+    physics.addBody(laser, "kinematic")
+    laser.x = xeon.x
+    laser.y = xeon.y
+    laser:play()
+    local sh = transition.to(laser, {x = 2000, time = 1700})
 end
 
 
