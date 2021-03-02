@@ -1,12 +1,11 @@
 local composer = require ("composer")
--- local mappa = require('scene.mappa1')
 local tiled = require "com.ponywolf.ponytiled"
 local json = require "json"
 local physics = require ("physics")
--- local robot = require("scene.robot.robot")
+local robot = require("scene.robot.robot")
 
 -- Variabili locali per la scena
-local map, mapData, robot, background
+local map, mapData, hero, background
 
 local scene = composer.newScene()
 local sceneGroup
@@ -24,14 +23,8 @@ function scene:create(event)
     map = tiled.new(mapData, "scene/map")
    
    
-    -- map = mappa.loadLevel('testLevel.json')
-    -- local platform = map:listTypes('platform')
-    -- print(#platform)
-
-
-
     -- Creazione del robot (eroe)
-    -- robot = robot.createRobot()
+    hero = robot.createRobot()
 
 
     -- Aggiungiamo alla scena gli oggetti, !!! ordine => back-to-front

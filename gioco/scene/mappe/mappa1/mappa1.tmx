@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="60" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="24">
+ <editorsettings>
+  <export target="mappa1.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tiles1" tilewidth="16" tileheight="16" tilecount="18" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="16" height="16" source="Outside/1.png"/>
+  </tile>
+  <tile id="1">
+   <image width="16" height="16" source="Outside/2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="16" height="16" source="Outside/3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="16" height="16" source="Outside/4.png"/>
+  </tile>
+  <tile id="4">
+   <image width="16" height="16" source="Outside/5.png"/>
+  </tile>
+  <tile id="5">
+   <image width="16" height="16" source="Outside/6.png"/>
+  </tile>
+  <tile id="6">
+   <image width="16" height="16" source="Outside/7.png"/>
+  </tile>
+  <tile id="7">
+   <image width="16" height="16" source="Outside/8.png"/>
+  </tile>
+  <tile id="8">
+   <image width="16" height="16" source="Outside/9.png"/>
+  </tile>
+  <tile id="9">
+   <image width="16" height="16" source="Outside/10.png"/>
+  </tile>
+  <tile id="10">
+   <image width="16" height="16" source="Outside/11.png"/>
+  </tile>
+  <tile id="11">
+   <image width="16" height="16" source="Outside/12.png"/>
+  </tile>
+  <tile id="12">
+   <image width="16" height="12" source="Outside/13.png"/>
+  </tile>
+  <tile id="13">
+   <image width="16" height="12" source="Outside/14.png"/>
+  </tile>
+  <tile id="14">
+   <image width="16" height="12" source="Outside/15.png"/>
+  </tile>
+  <tile id="15">
+   <image width="16" height="16" source="Outside/16.png"/>
+  </tile>
+  <tile id="16">
+   <image width="16" height="12" source="Outside/17.png"/>
+  </tile>
+  <tile id="17">
+   <image width="16" height="16" source="Outside/18.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="terreno" width="60" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,2,2,2,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,9,9,9,9,9,9,9,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,14,14,14,15,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,11,2,2,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,2,2,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,14,14,15,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,2,2,2,2,2,3,0,0,0,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17
+</data>
+ </layer>
+ <objectgroup id="2" name="platform" opacity="0">
+  <object id="5" type="platform" x="0.107777" y="288.227" width="110.997" height="15.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="14" type="platform" x="143.835" y="208.589" width="80.3303" height="15.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="15" type="platform" x="255.502" y="240.256" width="80.3303" height="15.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="16" type="platform" x="159.835" y="288.589" width="352.664" height="15.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="17" type="platform" x="671.001" y="243.923" width="80.664" height="12.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="18" type="platform" x="559.835" y="287.923" width="399.664" height="15.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="19" type="platform" x="767.668" y="196.089" width="95.664" height="12.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="20" type="platform" x="255.835" y="128.589" width="95.997" height="46.8213">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="21" type="platform" x="240.168" y="147.589" width="18.3303" height="27.8213">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="22" type="platform" x="224.668" y="164.089" width="142.664" height="12.488">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="water" opacity="0">
+  <object id="23" type="water" x="0" y="304" width="959.667" height="15.6667" visible="0">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="bounce" type="float" value="0"/>
+    <property name="density" type="float" value="0"/>
+    <property name="friction" type="float" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="60" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="214">
+ <editorsettings>
+  <export target="livello2.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tilesetlvl2" tilewidth="16" tileheight="27" tilecount="37" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="16" height="16" source="Acid (1).png"/>
+  </tile>
+  <tile id="1">
+   <image width="16" height="16" source="Acid (2).png"/>
+  </tile>
+  <tile id="2">
+   <image width="16" height="22" source="Barrel (1).png"/>
+  </tile>
+  <tile id="3">
+   <image width="16" height="22" source="Barrel (2).png"/>
+  </tile>
+  <tile id="4">
+   <image width="16" height="16" source="BGTile (1).png"/>
+  </tile>
+  <tile id="5">
+   <image width="16" height="16" source="BGTile (2).png"/>
+  </tile>
+  <tile id="6">
+   <image width="16" height="16" source="BGTile (3).png"/>
+  </tile>
+  <tile id="7">
+   <image width="16" height="16" source="BGTile (4).png"/>
+  </tile>
+  <tile id="8">
+   <image width="16" height="16" source="BGTile (5).png"/>
+  </tile>
+  <tile id="9">
+   <image width="16" height="16" source="BGTile (6).png"/>
+  </tile>
+  <tile id="10">
+   <image width="16" height="16" source="BGTile (7).png"/>
+  </tile>
+  <tile id="11">
+   <image width="16" height="16" source="Box.png"/>
+  </tile>
+  <tile id="12">
+   <image width="16" height="27" source="DoorLocked.png"/>
+  </tile>
+  <tile id="13">
+   <image width="16" height="27" source="DoorOpen.png"/>
+  </tile>
+  <tile id="14">
+   <image width="16" height="26" source="DoorUnlocked.png"/>
+  </tile>
+  <tile id="15">
+   <image width="16" height="16" source="Fence (1).png"/>
+  </tile>
+  <tile id="16">
+   <image width="16" height="16" source="Fence (2).png"/>
+  </tile>
+  <tile id="17">
+   <image width="16" height="16" source="Fence (3).png"/>
+  </tile>
+  <tile id="18">
+   <image width="16" height="16" source="Saw.png"/>
+  </tile>
+  <tile id="19">
+   <image width="16" height="16" source="Spike.png"/>
+  </tile>
+  <tile id="20">
+   <image width="4" height="14" source="Switch (1).png"/>
+  </tile>
+  <tile id="21">
+   <image width="4" height="14" source="Switch (2).png"/>
+  </tile>
+  <tile id="22">
+   <image width="16" height="16" source="Tile (1).png"/>
+  </tile>
+  <tile id="23">
+   <image width="16" height="16" source="Tile (2).png"/>
+  </tile>
+  <tile id="24">
+   <image width="16" height="16" source="Tile (3).png"/>
+  </tile>
+  <tile id="25">
+   <image width="16" height="16" source="Tile (4).png"/>
+  </tile>
+  <tile id="26">
+   <image width="16" height="16" source="Tile (5).png"/>
+  </tile>
+  <tile id="27">
+   <image width="16" height="16" source="Tile (6).png"/>
+  </tile>
+  <tile id="28">
+   <image width="16" height="16" source="Tile (7).png"/>
+  </tile>
+  <tile id="29">
+   <image width="16" height="16" source="Tile (8).png"/>
+  </tile>
+  <tile id="30">
+   <image width="16" height="16" source="Tile (9).png"/>
+  </tile>
+  <tile id="31">
+   <image width="16" height="16" source="Tile (10).png"/>
+  </tile>
+  <tile id="32">
+   <image width="16" height="16" source="Tile (11).png"/>
+  </tile>
+  <tile id="33">
+   <image width="16" height="16" source="Tile (12).png"/>
+  </tile>
+  <tile id="34">
+   <image width="16" height="16" source="Tile (13).png"/>
+  </tile>
+  <tile id="35">
+   <image width="16" height="16" source="Tile (14).png"/>
+  </tile>
+  <tile id="36">
+   <image width="16" height="16" source="Tile (15).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="38" name="backgroundlab" tilewidth="960" tileheight="320" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="960" height="320" source="lab-background.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="sfondo" width="60" height="20">
+  <data encoding="csv">
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="wheels" width="60" height="20">
+  <properties>
+   <property name="angularVelocity" type="int" value="30"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,19,0,0,0,0,0,0,0,0,0,19,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="tiled1" width="60" height="20">
+  <properties>
+   <property name="bodyType" value="static"/>
+  </properties>
+  <data encoding="csv">
+5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6,6,5,5,6,6,6,6,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
+8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,24,24,24,24,24,24,0,0,0,23,24,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,15,8,
+8,0,0,0,0,0,16,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,27,27,24,0,0,0,0,20,23,24,1,1,25,0,0,0,0,0,0,5,5,6,6,5,0,0,5,5,10,
+10,0,0,0,0,0,23,24,24,25,1,1,1,23,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7,7,7,24,0,0,0,0,0,0,0,11,11,2,0,0,0,2,8,
+10,25,0,0,0,0,26,27,27,27,2,2,2,26,27,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,2,0,0,0,2,10,
+8,32,33,0,0,0,0,0,0,27,27,27,27,27,27,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,4,0,0,0,0,0,2,0,0,0,2,10,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,4,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34,34,34,37,0,0,0,0,2,0,0,0,2,8,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,27,27,27,27,27,27,27,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,10,
+8,0,0,23,24,24,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,16,17,17,17,18,0,0,0,0,0,0,0,0,0,0,0,0,23,24,5,0,0,0,5,10,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,27,27,27,28,0,0,0,23,24,24,24,24,24,25,0,0,0,0,0,0,0,0,0,0,34,32,32,0,0,0,0,0,8,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,
+10,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,
+10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,0,12,0,0,0,12,3,0,0,0,0,0,0,0,0,0,10,
+8,0,0,0,13,22,0,0,0,24,24,25,1,1,1,24,24,24,24,25,20,20,23,24,24,24,25,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,24,24,24,20,20,24,24,24,1,1,1,1,1,1,1,1,1,8,
+10,20,20,23,24,24,24,24,24,27,27,2,2,2,2,27,27,10,8,10,8,10,8,10,8,10,10,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,27,8,7,8,8,7,8,27,2,2,2,2,2,2,2,2,2,10,
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+</data>
+ </layer>
+ <objectgroup id="11" name="barrier" visible="0">
+  <properties>
+   <property name="bodyType" value="static"/>
+  </properties>
+  <object id="152" x="944.5" y="3" width="14" height="314.5">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="153" x="2" y="3" width="13.1667" height="315.5">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="197" x="2" y="304.667" width="956.667" height="14">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="198" x="1.33317" y="2" width="956.667" height="14">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="platform" visible="0">
+  <properties>
+   <property name="bodyType" value="static"/>
+  </properties>
+  <object id="154" x="48.3333" y="288" width="383.667" height="16.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="155" x="352.333" y="272.333" width="79.3333" height="17.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="156" x="240" y="271.667" width="79.6667" height="20.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="157" x="144" y="271.667" width="47.6667" height="20">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="158" x="12" y="239.333" width="20" height="8">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="159" x="47.6667" y="191.667" width="64.6667" height="16.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="160" x="8" y="127.667" width="23.6667" height="23.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="161" x="6.66667" y="143.667" width="40" height="8.33333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="162" x="96.3333" y="111.333" width="63.6667" height="33">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="163" x="208" y="111.667" width="31.6667" height="33">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="164" x="144.333" y="144.333" width="95.6667" height="15.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="165" x="240.667" y="122" width="15" height="69.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="166" x="255.667" y="153.667" width="16.3333" height="26.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="167" x="272.333" y="160.667" width="15" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="168" x="240.667" y="175.333" width="143.333" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="169" x="545" y="207.667" width="110.667" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="170" x="415.667" y="208" width="80.6667" height="16.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="171" x="479.667" y="191.333" width="16.6667" height="20">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="172" x="479.667" y="79.6667" width="33" height="32.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="173" x="512" y="73.6667" width="16" height="39">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="174" x="479.667" y="95.6667" width="64.3333" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="175" x="320" y="80.6667" width="112.667" height="15.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="176" x="624" y="95.6667" width="32" height="18.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="177" x="687.667" y="96" width="16.6667" height="32.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="178" x="592.333" y="112.333" width="127.333" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="179" x="704.333" y="113" width="15.3333" height="31">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="180" x="736.333" y="138" width="48" height="29.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="181" x="779.667" y="159.667" width="20" height="8">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="182" x="800" y="95.6667" width="80" height="16.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="183" x="831.333" y="112.333" width="32.6667" height="16.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="184" x="832.333" y="192" width="47.6667" height="15.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="186" x="816.667" y="207.667" width="46.6667" height="8">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="187" x="911.667" y="95.6667" width="33" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="188" x="928" y="191.667" width="16" height="17.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="189" x="752" y="271.667" width="48" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="190" x="671.667" y="272" width="47.6667" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="191" x="671.667" y="288" width="127.667" height="15.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="192" x="704" y="255.667" width="15.6667" height="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="193" x="767.667" y="255.667" width="16.3333" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="195" x="784" y="250" width="15.6667" height="23">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="196" x="384" y="250" width="16" height="25">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="traps" visible="0">
+  <properties>
+   <property name="bodyType" value="static"/>
+  </properties>
+  <object id="200" type="trap" x="13.3333" y="295.333" width="37.3333" height="10.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="201" type="trap" x="318.333" y="278.667" width="35" height="11.3333">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="202" type="trap" x="431" y="276.667" width="242" height="29.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="203" type="trap" x="717.667" y="277.667" width="36.3333" height="12">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="204" type="trap" x="798.333" y="276" width="147.667" height="30">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="205" type="trap" x="864.333" y="112" width="15.6667" height="82">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="206" type="trap" x="928" y="112.667" width="16.6667" height="81.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="207" type="trap" x="848.333" y="128.667" width="15.3333" height="15.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="208" type="trap" x="752" y="16" width="32.3333" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="209" type="trap" x="927.667" y="16" width="16.6667" height="16.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="210" type="trap" x="607.667" y="102.667" width="16.3333" height="11">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="211" type="trap" x="367.667" y="70" width="16.3333" height="10.6667">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="212" type="trap" x="192" y="276.333" width="48.3333" height="14">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="213" type="trap" x="159.333" y="116.667" width="50" height="29">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
